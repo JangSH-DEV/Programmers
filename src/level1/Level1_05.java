@@ -7,9 +7,12 @@ import java.util.Collections;
 public class Level1_05 {
 
 	public String solution(String s) {
-
+		
 		// s를 배열로 반환해서 str배열에 저장
 		String[] str = s.split("");
+		
+		// str을 순서대로 정렬
+		Arrays.sort(str);
 		
 		// Collections.reverse()를 사용해서 str배열을 역순으로 정렬
 		// reverse 매개변수로는 list가 들어가야해서 Arrays의 함수인 asList 사용
